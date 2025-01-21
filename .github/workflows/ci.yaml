@@ -43,7 +43,7 @@ jobs:
             - name: Build Docker Image
               run: docker build -t martinholutero/aula-cid-cd . 
 
-            -name: Push Docker Image to DockerHub
+            - name: Push Docker Image to DockerHub
               run: push martinholutero/aula-cid-cd:latest
               
 
