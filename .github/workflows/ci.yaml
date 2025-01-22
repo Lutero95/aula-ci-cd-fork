@@ -52,7 +52,7 @@ jobs:
               run: docker build -t martinholutero/aula-cid-cd:${{ steps.generate_tag.outputs.sha }} .
 
             - name: Push Docker Image to DockerHub
-              run: docker push imartinholutero/aula-cid-cd:${{ steps.generate_tag.outputs.sha }}
+              run: docker push martinholutero/aula-cid-cd:${{ steps.generate_tag.outputs.sha }}
 
 
 
