@@ -53,11 +53,7 @@ jobs:
 
             - name: Push Docker Image to DockerHub
               run: docker push martinholutero/aula-cid-cd:${{ steps.generate_tag.outputs.sha }}
-
-
-
-
-          
+              
               
 
           
