@@ -44,7 +44,7 @@ jobs:
               run: docker build -t martinholutero/aula-cid-cd . 
 
             - name: Push Docker Image to DockerHub
-              run: push martinholutero/aula-cid-cd:latest
+              run: docker push martinholutero/aula-cid-cd:latest
               
 
           
