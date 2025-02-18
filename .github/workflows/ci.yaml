@@ -12,6 +12,8 @@ jobs:
     build:
         name: 'Build and Push'
         runs-on: ${{ matrix.os }}
+        outputs:
+          docker_tag: ${{ steps.generate_tag.outputs.sha }}
 
         strategy:
             matrix:
